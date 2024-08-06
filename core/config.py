@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     DATABASE_URL: str = f"mysql+pymysql://{DB_USER}:%s@{DB_HOST}:{DB_PORT}/{DB_NAME}" % quote_plus(DB_PASSWORD)
     
     # JWT 
-    JWT_SECRET: str = os.getenv('JWT_SECRET', '709d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7')
+    JWT_SECRET: str = os.getenv('JWT_SECRET', '87417232066e30c59ef0ecd49c682b029a3a46f6c1322a3f476af93a3bd14c2e')
     JWT_ALGORITHM: str = os.getenv('JWT_ALGORITHM', "HS256")
     ACCESS_TOKEN_EXPIRE_MINUTES: int = os.getenv('JWT_TOKEN_EXPIRE_MINUTES', 60)
     
